@@ -14,7 +14,7 @@ export class QuoteService {
       constructor() {
         super();
 
-        const trianglesPerBird = 3;
+        const trianglesPerBird = 4;
         const triangles = BIRDS * trianglesPerBird;
         const points = triangles * 3;
 
@@ -38,7 +38,7 @@ export class QuoteService {
           }
         }
 
-        const wingsSpan = 20;
+        const wingsSpan = 10;
 
         for (let f = 0; f < BIRDS; f++) {
           // Body
@@ -362,12 +362,10 @@ export class QuoteService {
       scene = new THREE.Scene();
       scene.background = new THREE.Color(0x000000);
       scene.fog = new THREE.Fog(0xffffff, 100, 1000);
-
       renderer = new THREE.WebGLRenderer();
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
       container.appendChild(renderer.domElement);
-
       initComputeRenderer();
 
       // stats = new Stats();

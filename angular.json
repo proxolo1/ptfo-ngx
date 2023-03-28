@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "prtflio"
+  "defaultProject": "prtflio",
+  "cli": {
+    "analytics": false
+  }
 }

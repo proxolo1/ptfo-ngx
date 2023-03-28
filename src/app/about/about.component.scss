@@ -52,12 +52,13 @@
   margin-left: 2vw;
 }
 .aframe {
-  background-image: url("https://user-images.githubusercontent.com/73517233/227708896-6356b0e4-29cf-4f4e-b40c-7ab3b8e9b0c6.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #ef2d5e;
+}
+.aframe-title {
+  transform: rotate(270deg);
+  position: relative;
+  top: 13vw;
 }
 .npm {
-  background-image: url("https://user-images.githubusercontent.com/73517233/227709548-07da6ce1-62a3-4ee6-8c6b-fd8c109138de.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #cd0000;
 }

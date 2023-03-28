@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { QuoteService } from '@app/home/quote.service';
 
 import { environment } from '@env/environment';
-
+import { AvatarService } from './avatar.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -11,10 +10,10 @@ import { environment } from '@env/environment';
 export class AboutComponent implements OnInit {
   version: string | null = environment.version;
 
-  constructor(private birdService: QuoteService) {}
+  constructor(private avatarService: AvatarService) {}
 
   ngOnInit() {
-    let birds = <HTMLDivElement>document.querySelector('.birds');
-    this.birdService.init(2, birds);
+    let avatar = document.querySelector('.avatar');
+    this.avatarService.init(avatar);
   }
 }
