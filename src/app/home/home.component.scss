@@ -14,7 +14,15 @@
     left: 0;
   }
 }
-
+a{
+  text-decoration: none;
+  color: #d1d0d0;
+  font-weight: bolder;
+}
+.menu-item{
+  color: #e3e3e3 !important;
+  opacity: 1 !important;
+}
 #overlay {
   position: absolute;
   font-size: 16px;
@@ -69,7 +77,7 @@
   pointer-events: none;
   font-size: 6vw;
   letter-spacing: 2.6vw;
-  color: hsl(192deg 100% 50%);
+  color: #898989;
   /* text-shadow: 0px 6px 10px #3d5257; */
   // filter: drop-shadow(0px 6px 10px #3d5257);
   text-indent: 2.6vw;
@@ -89,7 +97,7 @@
   text-align: right;
   pointer-events: none;
   font-size: 1vw;
-  letter-spacing: 1.55vw;
+  // letter-spacing: 1.55vw;
   text-indent: 1.8vw;
   position: relative;
   top: 0;
